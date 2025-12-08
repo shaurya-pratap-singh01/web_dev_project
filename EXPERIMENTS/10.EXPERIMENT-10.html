@@ -4,96 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: x-large;
+        }
+        header{
+            display: flex;
+            height: 100px;
+            background-color: black;
+            color: aliceblue;
+            margin: auto;
+            justify-content:space-between ;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            list-style-type: none;
+            display: flex;
+            margin-left: 20px;
+            width: 125px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+
+        }
+        li:hover{
+           font-size: 30px;
+            cursor: pointer;
+            box-shadow:0 2px 2px 0 grey;
+        }
+        #nav{
+            font-size: 40px;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        #navbar{
+            background-color: gray;
+            font-size: 25px;
+            display: none;
+        }
+        @media screen and (max-width:1260px)
+        {   body{
+            font-size: larger;
+        }
+            li{
+                margin-left: 0px;
+                width: 100px;
+            }
+            li:hover{
+                font-size: 25px;
+            }
+
+        }
+        @media screen and (max-width:930px){
+            body{
+                font-size: large;
+            }
+            li{
+                width: 75px;
+            }
+            li:hover{
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width:750px){
+            #middle{
+                display: none;
+            }
+            #main{
+                display: none;
+            }
+            #nav{
+                display: block;
+                cursor: pointer;
+            }
+            #navbar{
+                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+    </style>
 </head>
 <body>
-    <style>
-        * { 
-  margin: 0; 
-  padding: 0; 
-  box-sizing: border-box; 
-} 
-.navbar { 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  background-color: #222; 
-  color: white; 
-  padding: 15px 20px; 
-} 
- 
-.logo { 
-  font-size: 1.5rem; 
-  font-weight: bold; 
-} 
- 
-.nav-links { 
-  display: flex; 
-  list-style: none; 
-} 
- 
-.nav-links li { 
-  margin: 0 15px; 
-} 
- 
-.nav-links a { 
-  text-decoration: none; 
-  color: white; 
-  font-size: 1rem; 
-} 
- 
-.actions a { 
-  margin-left: 15px; 
-  color: white; 
-  text-decoration: none; 
-  font-weight: bold; 
-}  
-@media (max-width: 768px) { 
-  .nav-links { 
-    display: none; 
-  } 
-  .actions { 
-    font-size: 0.9rem; 
-  } 
-} 
- 
-@media (min-width: 769px) and (max-width: 1024px) { 
-  .nav-links a { 
-    font-size: 0.9rem; 
-  } 
-} 
- 
-@media (min-width: 1025px) { 
-  .nav-links a { 
-    font-size: 1rem; 
-  } 
-}
-    </style>
+    <header>
+        <div id="first"><h1>ShopEase</h1></div>
+        <div id="middle"><ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Categories</li>
+            <li>Deals</li>
+            <li>Contact</li>
+        </ul></div>
+        <div id="nav"><i class="bi bi-list"></i></div>
+        <div id="last"><ul>
+            <li>Cart<span class="material-icons">shopping_cart</span></li>
+            <li>Login</li>
+        </ul></div>
+    </header>
+    <div id="main"> 
+    <h1>Welcome to ShopEase!</h1>
+    <p>Your one -step destination for all shopping needs.</p>
+    </div>
+    <div id="navbar">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Categories</li>
+            <li>Deals</li>
+            <li>Contact</li>
+    </div>
 </body>
-</html> 
-<html lang="en">  
-<body> 
-  <nav class="navbar"> 
-    <div class="logo">ShopEase</div> 
-    <ul class="nav-links"> 
-      <li><a href="#">Home</a></li> 
-      <li><a href="#">Products</a></li> 
-      <li><a href="#">Categories</a></li> 
-      <li><a href="#">Deals</a></li> 
-      <li><a href="#">Contact</a></li> 
-    </ul> 
-    <div class="actions"> 
-      <a href="#">Cart 🛒</a> 
-      <a href="#">Login</a> 
-    </div> 
-  </nav> 
- 
-  <section> 
-    <h1>Welcome to ShopEase!</h1> 
-    <p>Your one-stop destination for all shopping needs.</p> 
-  </section> 
- 
-</body> 
 </html>
-
-NAME - SHAURYA PARTAP SINGH <br>
-ROLL NO. - 2025B15410153 
+Name: SHAURYA PRATAP SINGH <br>
+Adm. No: 2025B15410153
